@@ -1,0 +1,50 @@
+* {
+  --color-bg-001: #222;
+  --color-fg-001: #eee;
+  --color-border-001: #444;
+}
+body {
+  background-color: var(--color-bg-001);
+  color: var(--color-fg-001);
+  font-family: monospace;
+  padding: 0px;
+  margin: 0px;
+}
+button {
+  color: var(--color-fg-001);
+  cursor: pointer;
+  background-color: #555;
+  border: 1px solid #333;
+}
+button:hover {
+  color: orange;
+}
+input {
+  background-color: var(--color-bg-001);
+  color: var(--color-fg-001);
+  border: 1px solid var(--color-border-001);
+  padding: 0.5em;
+  outline: none;
+}
+input.error {
+  border: 1px solid red;
+}
+.HeapWatcher {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.HeapWatcher .hw-head {
+  display: flex;
+}
+.HeapWatcher .hw-head input.hw-iburl {
+  flex-grow: 1;
+}
+.HeapWatcher .hw-head button {
+  border-left: 0px solid red;
+}
+.HeapWatcher .hw-body {
+  flex-grow: 1;
+}
+.HeapWatcher .hw-body canvas {
+}
